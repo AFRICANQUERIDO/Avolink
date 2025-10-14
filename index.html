@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avocado Oil Exchange</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-green-700">Avocado Oil Exchange</h1>
+        <nav class="space-x-6 hidden md:block">
+          <a href="#about" class="hover:text-green-700">About</a>
+          <a href="#how" class="hover:text-green-700">How It Works</a>
+          <a href="#resources" class="hover:text-green-700">Resources</a>
+          <a href="#contact" class="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800">
+            Submit Inquiry
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative bg-cover bg-center h-[60vh]"
+      style="background-image: url('https://images.unsplash.com/photo-1603791452906-9a9fce4b7e90?auto=format&fit=crop&w=1950&q=80');"
+    >
+      <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-center text-white">
+        <h2 class="text-4xl font-bold mb-4">Connecting Avocado Oil Buyers & Processors</h2>
+        <p class="text-lg mb-6 max-w-xl">
+          A trusted platform linking avocado oil producers, processors, and buyers across regions.
+        </p>
+        <a
+          href="#contact"
+          class="bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold text-white"
+        >
+          Send Inquiry
+        </a>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold text-green-700 mb-10">How It Works</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-6 border rounded-lg shadow-sm">
+            <h4 class="font-semibold text-xl mb-3">1. Find Suppliers</h4>
+            <p>Browse a verified list of avocado oil processors ready to fulfill buyer requests.</p>
+          </div>
+          <div class="p-6 border rounded-lg shadow-sm">
+            <h4 class="font-semibold text-xl mb-3">2. Connect Directly</h4>
+            <p>Buyers submit inquiries, and we help establish direct communication with processors.</p>
+          </div>
+          <div class="p-6 border rounded-lg shadow-sm">
+            <h4 class="font-semibold text-xl mb-3">3. Build Partnerships</h4>
+            <p>Processors gain access to reliable markets, and buyers enjoy quality and traceability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inquiry Form -->
+    <section id="contact" class="py-16 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold text-green-700 mb-6">Submit Your Inquiry</h3>
+        <p class="mb-8 text-gray-700">
+          Share your details, and we’ll connect you with the right avocado oil processors.
+        </p>
+        <form
+          action="https://formspree.io/f/your_form_id"
+          method="POST"
+          class="space-y-4 text-left bg-white p-8 shadow-md rounded-lg"
+        >
+          <div>
+            <label class="block mb-1 font-medium">Your Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+              class="w-full border rounded p-3"
+            />
+          </div>
+          <div>
+            <label class="block mb-1 font-medium">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              class="w-full border rounded p-3"
+            />
+          </div>
+          <div>
+            <label class="block mb-1 font-medium">Your Inquiry</label>
+            <textarea
+              name="message"
+              placeholder="Describe your request or interest"
+              rows="4"
+              required
+              class="w-full border rounded p-3"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 w-full"
+          >
+            Send Inquiry
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white py-8">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <p>&copy; 2025 Avocado Oil Exchange. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
