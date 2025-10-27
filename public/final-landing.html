@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Avocado Oil Exchange</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+<script>
+    // Tailwind Configuration for Customization
+    tailwind.config = {
+      darkMode: "class", // Enable dark mode based on 'dark' class on the HTML tag
+      theme: {
+        extend: {
+          colors: {
+            primary: "#73cf17", // Custom primary color (Avocado Green)
+            "background-light": "#f7f8f6",
+            "background-dark": "#192111",
+          },
+          fontFamily: {
+            display: ["Manrope"],
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+</script>
+<style>
+    /* Custom utility class to ensure contrast in both light and dark modes */
+    .text-contrast {
+      color: #192111; /* Dark text for light background */
+    }
+    .dark .text-contrast {
+      color: #f7f8f6; /* Light text for dark background */
+    }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111827] dark:text-gray-300">
+<div class="relative w-full overflow-x-hidden">
+
+<header class="border-b border-primary/20 dark:border-primary/30">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-6 py-4">
+<div class="flex items-center gap-3 text-contrast">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+<h2 class="text-xl font-bold">AvoLink</h2>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium text-contrast hover:text-primary" href="#about">About</a>
+<a class="text-sm font-medium text-contrast hover:text-primary" href="#how-it-works">How it Works</a>
+<a class="text-sm font-medium text-contrast hover:text-primary" href="#benefits-to-buyers">Benefits</a>
+<a class="text-sm font-medium text-contrast hover:text-primary" href="#pricing">Pricing</a>
+<button class="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-contrast">Sign In</button>
+</nav>
+</div>
+</header>
+
+<main class="container mx-auto px-6 py-10 md:py-20">
+<div class="flex flex-col gap-16 md:gap-24">
+
+<div class="@container">
+<div class="relative flex min-h-[480px] flex-col items-start justify-end overflow-hidden rounded-xl bg-cover bg-center p-6 text-white @[480px]:p-12" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCipZp-8hrYX5p2OEdMqZcCo1L9AXzI98hMrB4T5hWSxBE9GGgrThblAPEPSA5xTV2by4vR073MMOQuj3zvuEgSBoyU5w36ur2zv6GJK0H7mlbYsI9abtgzW2wwU-4g83GnXv1vUJpffjMghxFvjJzqKBaNgn3O4nWPtEaaDiOhsc_1DfVMwEi4XKNE5F31cK6raOtrLooGtVk2LK7KQgmy5UQqa9sY9OSWBtSWKsaJClHumk4bALGk5ge_stN6jx1I68X_kYmvCbws");'>
+<div class="flex max-w-2xl flex-col gap-4">
+<h1 class="text-4xl font-extrabold tracking-tighter @[480px]:text-6xl">Connect with Trusted Avocado Oil Suppliers</h1>
+<p class="text-base @[480px]:text-lg">Streamline your sourcing process and find high-quality avocado oil that meets your exact specifications.</p>
+</div>
+<a class="mt-6 inline-block rounded-lg bg-primary px-5 py-3 text-base font-bold text-contrast @[480px]:px-6 @[480px]:py-3" href="#contact">Submit Inquiry</a>
+</div>
+</div>
+
+<section id="how-it-works" class="flex flex-col gap-12">
+<div class="mx-auto max-w-3xl text-center">
+<h2 class="text-3xl font-bold tracking-tight text-contrast @[480px]:text-4xl">How It Works</h2>
+<p class="mt-4 text-lg text-contrast/80">Our platform simplifies the process of finding and connecting with avocado oil suppliers.</p>
+</div>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+<div class="flex flex-col gap-4 rounded-lg border border-primary/20 bg-primary/5 p-6 dark:border-primary/30 dark:bg-primary/10">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20">
+<svg class="text-primary" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold text-contrast">Find Suppliers</h3>
+<p class="text-sm text-contrast/70">Search our extensive database of verified avocado oil processors based on your specific needs.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg border border-primary/20 bg-primary/5 p-6 dark:border-primary/30 dark:bg-primary/10">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20">
+<svg class="text-primary" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M116,176a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h28A8,8,0,0,1,116,176Zm60-8H148a8,8,0,0,0,0,16h28a8,8,0,0,0,0-16Zm72,48a8,8,0,0,1-8,8H16a8,8,0,0,1,0-16H32V88a8,8,0,0,1,12.8-6.4L96,120V88a8,8,0,0,1,12.8-6.4l38.74,29.05L159.1,29.74A16.08,16.08,0,0,1,174.94,16h18.12A16.08,16.08,0,0,1,208.9,29.74l15,105.13s.08.78.08,1.13v72h16A8,8,0,0,1,248,216Zm-85.86-94.4,8.53,6.4h36.11L193.06,32H174.94ZM48,208H208V144H168a8,8,0,0,1-4.8-1.6l-14.4-10.8,0,0L112,104v32a8,8,0,0,1-12.8,6.4L48,104Z"></path>
+</svg>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold text-contrast">Connect Directly</h3>
+<p class="text-sm text-contrast/70">Communicate directly with suppliers to discuss your requirements and negotiate terms.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-lg border border-primary/20 bg-primary/5 p-6 dark:border-primary/30 dark:bg-primary/10">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 dark:bg-primary/20">
+<svg class="text-primary" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"></path>
+</svg>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold text-contrast">Quality Assurance</h3>
+<p class="text-sm text-contrast/70">We ensure all suppliers meet stringent quality standards, providing you with peace of mind.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Benefits for Buyers -->
+<section id="benefits-to-buyers" class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+<div>
+<h2 class="text-3xl font-bold tracking-tight text-contrast @[480px]:text-4xl">Benefits for Buyers</h2>
+<p class="mt-4 text-lg text-contrast/80">Access a wide range of suppliers and streamline your procurement process.</p>
+<div class="mt-8 space-y-6">
+<div class="flex gap-4">
+<div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
+<svg class="text-primary" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-bold text-contrast">Expanded Supplier Network</h3>
+<p class="mt-1 text-contrast/70">Connect with a diverse network of avocado oil processors, expanding your sourcing options.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
+<svg class="text-primary" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-bold text-contrast">Efficient Sourcing</h3>
+<p class="mt-1 text-contrast/70">Our platform simplifies the sourcing process, saving you time and resources.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:order-first">
+<img alt="Avocado oil bottles and avocados on a wooden table." class="rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDq-O2vXFHMpSx0W9BdeDsgk6ApuiW90e72-tvRnK9ToIXD84KRc17Lgu3trlpkdks8I4GqYJjItquRnrviJPReqOpmIC57acKkZVCf117aakt6iugGTpAvhbw4HuQem2YZwtJVCtNJtyKM0SGLIt6W5o0nBlu-Wsu1u5xmGq-AdRmrLoQuM7lMNRB_d9dwq_j4xs-MT_lVRVym0zaOi5FkXaLQV5IJt-Z3HeWb7ZerJ6EPNGn8jb8uCTGsSYWOq3GhM0LlnK5Xl7a"/>
+</div>
+</section>
+
+<!-- Benefits for Processors -->
+<section id="benefits-to-processors" class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+<img alt="Close-up of avocados being processed." class="rounded-xl md:order-last" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCipZp-8hrYX5p2OEdMqZcCo1L9AXzI98hMrB4T5hWSxBE9GGgrThblAPEPSA5xTV2by4vR073MMOQuj3zvuEgSBoyU5w36ur2zv6GJK0H7mlbYsI9abtgzW2wwU-4g83GnXv1vUJpffjMghxFvjJzqKBaNgn3O4nWPtEaaDiOhsc_1DfVMwEi4XKNE5F31cK6raOtrLooGtVk2LK7KQgmy5UQqa9sY9OSWBtSWKsaJClHumk4bALGk5ge_stN6jx1I68X_kYmvCbws"/>
+<div>
+<h2 class="text-3xl font-bold tracking-tight text-contrast @[480px]:text-4xl">Benefits for Processors</h2>
+<p class="mt-4 text-lg text-contrast/80">Reach a broader audience of potential buyers and grow your business.</p>
+<div class="mt-8 space-y-6">
+<div class="flex gap-4">
+<div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
+<svg class="text-primary" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-bold text-contrast">Increased Market Reach</h3>
+<p class="mt-1 text-contrast/70">Connect with a wider range of buyers actively seeking avocado oil, expanding your market presence.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 dark:bg-primary/20">
+<svg class="text-primary" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0v94.37L90.73,98a8,8,0,0,1,10.07-.38l58.81,44.11L218.73,90a8,8,0,1,1,10.54,12l-64,56a8,8,0,0,1-10.07.38L96.39,114.29,40,163.63V200H224A8,8,0,0,1,232,208Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-bold text-contrast">Direct Buyer Engagement</h3>
+<p class="mt-1 text-contrast/70">Engage directly with potential buyers to understand their needs and build lasting relationships.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Inquiry Form -->
+<section id="contact" class="py-20 bg-primary/5 dark:bg-primary/10">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold tracking-tight text-contrast @[480px]:text-4xl">
+      Ready to Find Your Perfect Supplier?
+    </h2>
+    <p class="mt-4 text-lg text-contrast/80">
+      Submit an inquiry today and let us help you connect with the right avocado oil processor for your needs.
+    </p>
+
+    <form
+      ID="contact"
+      action="https://formspree.io/f/xyzbkewj"
+      method="POST"
+      class="mt-10 space-y-6 text-left bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 p-8 shadow-sm rounded-xl"
+    >
+       <!-- <form
+      action="https://formsubmit.co/janengene12@gmail.com"
+      method="POST"
+      class="mt-10 space-y-6 text-left bg-background-light dark:bg-background-dark border border-primary/20 dark:border-primary/30 p-8 shadow-sm rounded-xl"
+    > -->
+      <input type="hidden" name="_redirect" value="confirmation.html"/>
+      
+      <div>
+        <label class="block mb-2 font-semibold text-contrast">Full Name</label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+          class="w-full rounded-lg border border-primary/30 bg-transparent p-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-contrast"
+        />
+      </div>
+
+      <div>
+        <label class="block mb-2 font-semibold text-contrast">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+          class="w-full rounded-lg border border-primary/30 bg-transparent p-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-contrast"
+        />
+      </div>
+
+      <div>
+        <label class="block mb-2 font-semibold text-contrast">Company</label>
+         <input
+          type="text"
+          name="name"
+          placeholder="Enter your company"
+          class="w-full rounded-lg border border-primary/30 bg-transparent p-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-contrast"
+        />
+      </div>
+
+      <div>
+        <label class="block mb-2 font-semibold text-contrast">Your Inquiry</label>
+        <textarea
+          name="message"
+          placeholder="Describe your request or interest"
+          rows="4"
+          required
+          class="w-full rounded-lg border border-primary/30 bg-transparent p-3 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-contrast"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full rounded-lg bg-primary px-6 py-3 font-bold text-contrast hover:opacity-90 transition duration-200"
+      >
+        Send Inquiry
+      </button>
+    </form>
+    </div>
+</section>
+
+</div>
+</main>
+
+<footer class="border-t border-primary/20 dark:border-primary/30">
+<div class="container mx-auto px-6 py-10">
+<div class="flex flex-col items-center justify-between gap-6 md:flex-row">
+<div class="flex flex-wrap justify-center gap-6 text-center md:justify-start md:gap-8">
+<a class="text-sm text-contrast/80 hover:text-primary" href="#about">About</a>
+<a class="text-sm text-contrast/80 hover:text-primary" href="#hot-it-works">How it Works</a>
+<a class="text-sm text-contrast/80 hover:text-primary" href="#resources">Resources</a>
+<a class="text-sm text-contrast/80 hover:text-primary" href="#pricing">Pricing</a>
+<a class="text-sm text-contrast/80 hover:text-primary" href="#contact">Contact Us</a>
+</div>
+<p class="text-sm text-contrast/60">© 2025 Avocado Oil Exchange. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+<script src="theme-toggle.js"></script>
+</body></html>
